@@ -1,0 +1,90 @@
+/*==================自定義css==================*/
+
+/*==========全局css===========*/
+
+
+.mt-3 {
+  margin-top: 1.5rem;
+}
+.mt-4 {
+  margin-top: 2rem;
+}
+.mt-5 {
+  margin-top: 30px;
+}
+
+
+
+.pb-4 {
+  padding-bottom: 40px;
+}
+.pt-5 {
+  padding-top: 50px;
+}
+
+
+.leanFont {
+  font-weight: 300;
+  line-height: 1.1;
+}
+.pt-5 h2 {
+  color:white;
+}
+.mt-5 h4 {
+  color:white;
+}
+/*==============HeroImage==============*/
+
+
+.jumbotron {
+  background-image: url("assets/images/heroimage.jpg");
+  height: 800px;
+  /*響應瀏覽器的高度、寬度  */
+  background-size: cover;
+  padding-top:300px;
+  color:white;
+  margin-bottom: 0;
+
+}
+
+
+/*============== 訂閱欄 =================*/
+
+
+.subscribe-bar {
+  background: #3e4349;
+  color:white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+}
+
+.subscribe-bar p {
+  font-size:18px;
+}
+
+
+/*============== 冰品種類 =================*/
+
+.section-header img {
+  width: 100%;
+}
+
+.some-spaces {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+
+/*============== 優勢 =================*/
+.features {
+
+  background-image: url(assets/images/bg1.jpg);
+  background-position: bottom;
+}
+#kakigori {
+  width: 90px;
+}
+.smallPhoto {
+  width: 50px;
+}
