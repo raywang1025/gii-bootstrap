@@ -33,6 +33,11 @@
 .mt-5 h4 {
   color:white;
 }
+
+html,body {
+  overflow-x: hidden;
+  font-weight: 300;
+}
 /*==============HeroImage==============*/
 
 
@@ -87,4 +92,30 @@
 }
 .smallPhoto {
   width: 50px;
+}
+
+
+/*============== 其他課程 =================*/
+
+#otherCourse {
+  background-image: url("assets/images/ice7.jpg");
+  background-size: cover;
+  height: 500px;
+  color:white;
+  padding-top: 170px;
+  
+}
+
+
+/*============== footer =================*/
+
+footer {
+  background:#292b2c;
+  color:white;
+  font-size:15px;
+  padding:20px 0 10px;
+}
+
+footer a:visited {
+  color:white;
 }
