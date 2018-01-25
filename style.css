@@ -38,6 +38,14 @@ html,body {
   overflow-x: hidden;
   font-weight: 300;
 }
+
+a {
+  color:darkgray;
+}
+a:hover {
+  text-decoration:none;
+  color:green;
+}
 /*==============HeroImage==============*/
 
 
@@ -105,8 +113,46 @@ html,body {
   padding-top: 170px;
   
 }
+/*============== blog網頁頭圖片 =================*/
+#feature-image {
+  background-image: url(assets/images/feature1.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  height: 200px;
+}
+#feature-image h1 {
+  padding-top: 80px;
+  color:#fff;
+}
+/*============== 日誌設定 =================*/
+.primary {
+  margin-top: 100px;
+}
+
+.post h3 {
+  font-size: 25px;
+  margin-top: 50px;
+}
+.post-details,.post-excert {
+  font-size: 16px;
+}
+/*============== sidebar =================*/
+.widget h3 {
+  margin-top: 50px;
+}
+.widget p, {
+  font-size: 17px;
+}
+.widget label{
+  font-size: 20px;
+}
 
 
+.widget ul {
+  list-style: none;
+  padding:0;
+  font-size: 17px;
+}
 /*============== footer =================*/
 
 footer {

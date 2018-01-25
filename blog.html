@@ -10,6 +10,7 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="assets/font-awesome/css/font-awesome.min.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -21,6 +22,7 @@
 <body>
     <!-- ============================= header ================================== -->
     <header>
+        <!-- navbar-fixed-top指的是導航欄會一直在上方 -->
         <nav class="navbar navbar-inverse navbar-fixed-top">
             <div class="container-fluid">
                 <div class="navbar-header">
@@ -34,100 +36,155 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="index.html">關於我們</a></li>
-                        <li><a href="blog.html" class="active">部落格</a></li>
+                        <li class="active"><a href="blog.html">部落格</a></li>
                         <li><a href="#">聯絡方式</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <!-- ========================= HeroImage =========================== -->
-    <div class="jumbotron text-center">
-        <h1>冰品開發</h1>
-        <p><a href="#" class="btn btn-success btn-lg">洽詢</a></p>
+    <!-- ===================== blog網頁頭圖片 ========================-->
+    <div id="feature-image">
+        <div class="container">
+            <h1 class="text-center leanFont">我的日誌</h1>
+        </div>
     </div>
-    <!-- ====================== 訂閱欄 ====================== -->
-    <div class="subscribe-bar text-center">
+    <!-- ===================== 日誌內容 ========================-->
+    <div class="container">
+        <div class="row primary">
+            <div id="content" class="col-md-10 col-lg-8">
+                <div class="post">
+                    <h3><a href="post.html">第一個日誌</a></h3>
+                    <div class="post-details mt-4">
+                        <!-- aria-hidden可讓網頁加快且不會在無障礙網頁時讀出 -->
+                        <i class="fa fa-user-circle-o" aria-hidden="true"> Ray Wang</i>
+                        <i class="fa fa-clock-o" aria-hidden="true"><time> Jan 25. 2018</time></i>
+                        <i class="fa fa-folder-open-o" aria-hidden="true"><a href="#">展示</a><a href="#"> 食材</a></i>
+                        <i class="fa fa-tags" aria-hidden="true">標籤<a href="#"> 抹茶</a><a href="#"> 紅豆</a><a href="#"> 焙茶</a><a href="#"> 紫薯</a></i>
+                        <i class="fa fa-comment-o" aria-hidden="true"></i> <a href="">276</a>
+                    </div>
+                    <div class="mt-4">
+                        <img src="assets/images/menu1.jpg" alt="" class="img-responsive">
+                    </div>
+                    <!-- post-excert指摘要 -->
+                    <div class="post-excert mt-4">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores excepturi, quaerat voluptatibus ipsum beatae enim magnam vitae earum consequuntur perferendis ratione sunt mollitia! Nobis quam voluptate veniam ea architecto iusto et velit rerum iste commodi repudiandae porro earum consequatur quaerat corporis perferendis, voluptatem magnam, nisi in sed cupiditate quod repellat veritatis ipsam. Ea quibusdam ducimus, excepturi incidunt corporis harum, voluptatem provident eaque quia laudantium nemo aliquam veniam dolore distinctio odit, inventore, perspiciatis quam accusantium repellat. Dolores in, culpa dolore ipsum fuga accusantium suscipit deserunt cumque aliquid impedit, eum commodi beatae vitae, laudantium dolorum, inventore non debitis natus ipsam voluptatibus blanditiis?</p>
+                    </div>
+                </div>
+                <div class="post">
+                    <h3><a href="post.html">第二個日誌</a></h3>
+                    <div class="post-details mt-4">
+                        <!-- aria-hidden可讓網頁加快且不會在無障礙網頁時讀出 -->
+                        <i class="fa fa-user-circle-o" aria-hidden="true"> Ray Wang</i>
+                        <i class="fa fa-clock-o" aria-hidden="true"><time> Jan 25. 2018</time></i>
+                        <i class="fa fa-folder-open-o" aria-hidden="true"><a href="#">展示</a><a href="#"> 食材</a></i>
+                        <i class="fa fa-tags" aria-hidden="true">標籤<a href="#"> 抹茶</a><a href="#"> 紅豆</a><a href="#"> 焙茶</a><a href="#"> 紫薯</a></i>
+                        <i class="fa fa-comment-o" aria-hidden="true"></i> <a href="">276</a>
+                    </div>
+                    <div class="mt-4">
+                        <img src="assets/images/menu2.jpg" alt="" class="img-responsive">
+                    </div>
+                    <!-- post-excert指摘要 -->
+                    <div class="post-excert mt-4">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores excepturi, quaerat voluptatibus ipsum beatae enim magnam vitae earum consequuntur perferendis ratione sunt mollitia! Nobis quam voluptate veniam ea architecto iusto et velit rerum iste commodi repudiandae porro earum consequatur quaerat corporis perferendis, voluptatem magnam, nisi in sed cupiditate quod repellat veritatis ipsam. Ea quibusdam ducimus, excepturi incidunt corporis harum, voluptatem provident eaque quia laudantium nemo aliquam veniam dolore distinctio odit, inventore, perspiciatis quam accusantium repellat. Dolores in, culpa dolore ipsum fuga accusantium suscipit deserunt cumque aliquid impedit, eum commodi beatae vitae, laudantium dolorum, inventore non debitis natus ipsam voluptatibus blanditiis?</p>
+                    </div>
+                </div>
+                <div class="post">
+                    <h3><a href="post.html">第三個日誌</a></h3>
+                    <div class="post-details mt-4">
+                        <!-- aria-hidden可讓網頁加快且不會在無障礙網頁時讀出 -->
+                        <i class="fa fa-user-circle-o" aria-hidden="true"> Ray Wang</i>
+                        <i class="fa fa-clock-o" aria-hidden="true"><time> Jan 25. 2018</time></i>
+                        <i class="fa fa-folder-open-o" aria-hidden="true"><a href="#">展示</a><a href="#"> 食材</a></i>
+                        <i class="fa fa-tags" aria-hidden="true">標籤<a href="#"> 抹茶</a><a href="#"> 紅豆</a><a href="#"> 焙茶</a><a href="#"> 紫薯</a></i>
+                        <i class="fa fa-comment-o" aria-hidden="true"></i> <a href="">276</a>
+                    </div>
+                    <div class="mt-4">
+                        <img src="assets/images/menu3.jpg" alt="" class="img-responsive">
+                    </div>
+                    <!-- post-excert指摘要 -->
+                    <div class="post-excert mt-4">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores excepturi, quaerat voluptatibus ipsum beatae enim magnam vitae earum consequuntur perferendis ratione sunt mollitia! Nobis quam voluptate veniam ea architecto iusto et velit rerum iste commodi repudiandae porro earum consequatur quaerat corporis perferendis, voluptatem magnam, nisi in sed cupiditate quod repellat veritatis ipsam. Ea quibusdam ducimus, excepturi incidunt corporis harum, voluptatem provident eaque quia laudantium nemo aliquam veniam dolore distinctio odit, inventore, perspiciatis quam accusantium repellat. Dolores in, culpa dolore ipsum fuga accusantium suscipit deserunt cumque aliquid impedit, eum commodi beatae vitae, laudantium dolorum, inventore non debitis natus ipsam voluptatibus blanditiis?</p>
+                    </div>
+                </div>
+            </div>
+            <!-- ===================== sidebar ========================-->
+            <div class="col-md-10 col-lg-4">
+                <div class="widget">
+                    <h3>訂閱我們的最新消息</h3>
+                    <p class="leanFont">您會在我們第一時間收到消息</p>
+                    <button type="" class="btn btn-success leanFont" data-toggle="modal" data-target="#myModal">點擊這裡訂閱</button>
+                </div>
+                <div class="widget">
+                    <form class="form-group">
+                        <label for="sidebar-search">查詢日誌</label>
+                        <input type="text" name="" class="form-control" placeholder="請輸入您要查詢的內容" id="sidebar-search">
+                    </form>
+                </div>
+                <div class="widget">
+                    <label for="">
+                        關於宇治金時
+                    </label>
+                    <p>
+                        宇治金時（うじきんとき）是一種日本的傳統刨冰，以日式抹茶加砂糖及水煮成糖漿，淋在刨冰上，旁邊加上以砂糖熬煮的紅豆，製成色彩分明的甜品。也有人加上白色的糯米糰子，增加色彩及口感。 「宇治」原指宇治抹茶，即以京都府宇治市周邊地區所生產的日本抺茶，起源可上溯至鎌倉時代。至室町時代，宇治周邊地區所生產的茶被分類為高級抹茶，以「宇治玉露」最著名。 「金時」原指名為「金時豆」的紅豆，後來演變為指以砂糖煮調過的紅豆。現在的「宇治金時」則泛指由許多口味加上綠茶所製成的冰品（例如:芒果、草莓、薄荷），上面還可以加紅豆或蘆薈還有兩球冰淇淋。
+                    </p>
+                </div>
+                <div class="widget">
+                    <label for="">
+                        最新blog
+                    </label>
+                    <ul>
+                        <li><a href="#">芒果</a></li>
+                        <li><a href="#">草莓</a></li>
+                        <li><a href="#">香蕉</a></li>
+                    </ul>
+                </div>
+                <div class="widget">
+                    <label for="">目錄</label>
+                    <ul>
+                        <li><a href="">目錄#1</a></li>
+                        <li><a href="">目錄#1</a></li>
+                        <li><a href="">目錄#1</a></li>
+                        <li><a href="">目錄#1</a></li>
+                        <li><a href="">目錄#1</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ===================== 基礎創建課程連結 ========================-->
+    <div id="otherCourse">
         <div class="container">
             <div class="row">
-                <!-- 向上兼容，sm尺寸以上是8:4比例，sm尺寸以下版面恢復原本樣子 -->
-                <div class="col-sm-8">
-                    <p><strong>訂閱我們最新的資訊</strong>有最新的冰品</p>
-                </div>
-                <div class="col-sm-4">
-                    <button type="button" class="btn btn-success btn-lg leanFont" data-toggle="modal" data-target="#myModal">訂閱</button>
+                <div class="col-sm-12 text-center">
+                    <h2 class="leanFont">您是否想更了解關於<strong>宇治金時、京都小山園抹茶、鹿兒島紫薯</strong>等經典食材</h2>
+                    <p><a href="#" class="btn btn-lg btn-danger leanFont mt-5">點擊這裡獲得優惠卷</a></p>
                 </div>
             </div>
         </div>
     </div>
-    <!-- ======================== 冰品種類 ===================== -->
-    <div class="">
-        <div class="container section-header text-center some-spaces">
+    <!-- ===================== footer ========================-->
+    <footer>
+        <div class="container">
             <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <img src="assets/images/ice1.jpg" class="img-thumbnail" alt="">
+                <div class="col-xs-3">
+                    <a href="#">好冰冰</a>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <img src="assets/images/ice2.jpg" class="img-thumbnail" alt="">
+                <div class="col-xs-6">
+                    <nav>
+                        <ul class="list-inline">
+                            <li><a href="index.html" title="">關於我們</a></li>
+                            <li><a href="blog.html" title="">部落格</a></li>
+                            <li><a href="" title="">聯絡方式</a></li>
+                        </ul>
+                    </nav>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <img src="assets/images/ice3.jpg" class="img-thumbnail" alt="">
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <img src="assets/images/ice4.jpg" class="img-thumbnail" alt="">
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <img src="assets/images/ice5.jpg" class="img-thumbnail" alt="">
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <img src="assets/images/ice6.jpg" class="img-thumbnail" alt="">
-                </div>
-            </div>
-            <h2 class="leanFont mt-5">誰適合跟我們合作？</h2>
-            <div class="row">
-                <div class="col-xs-8 col-xs-offset-2">
-                    <h3 class="mt-5">想了解冰品的朋友</h3>
-                    <h4 class="leanFont">這個課程可以幫助您更加了解冰品設計，知道如何去選擇食材，如何去製作，如何擺盤</h4>
-                    <h3 class="mt-5">想創業開冰店的朋友</h3>
-                    <h4 class="leanFont">這個課程可以幫助您更加了解成本掌握，地點選擇，行銷方式</h4>
-                    <h3 class="mt-5">想了解冰品衍伸的朋友</h3>
-                    <h4 class="leanFont">這個課程可以幫助您更加了解冰品相關可發揮產品</h4>
+                <div class="col-xs-3">
+                    <p>&copy;2018 版權 GII.com</p>
                 </div>
             </div>
         </div>
-    </div>
-
-        <!-- ======================== 冰品種類 ===================== -->
-    <div class="features text-center pt-5 pb-4">
-      <div class="container">
-        <div>
-          <img src="assets/images/icemonster.png" alt="kakigori" id="kakigori"> 
-          <h2 class="leanFont">課程優勢</h2>
-        </div>
-        <div class="row mt-5">
-          <div class="col-sm-3">
-            <img src="assets/images/men.png" alt="menpower" class="smallPhoto">
-            <h4 class="leanFont">猛男主廚裸上身製冰教學</h4>
-          </div>
-          <div class="col-sm-3">
-            <img src="assets/images/clock.png" alt="clock" class="smallPhoto">
-            <h4 class="leanFont">緊密教學60分鐘</h4>
-          </div>
-          <div class="col-sm-3">
-            <img src="assets/images/calendar.png" alt="calendar" class="smallPhoto">
-            <h4 class="leanFont">預約已排滿至2018年底</h4>
-          </div>
-          <div class="col-sm-3">
-            <img src="assets/images/award.png" alt="lectures" class="smallPhoto">
-            <h4 class="leanFont">完成即可得到課程認證</h4>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-
-
+    </footer>
     <!-- ===================== Modal(跟js放在下部份) ========================-->
     <div class="modal fade" id="myModal">
         <div class="modal-dialog">
